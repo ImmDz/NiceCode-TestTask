@@ -1,0 +1,26 @@
+.button {
+  background-color: #f1f2f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+
+.button__cross {
+  @extend .button;
+  transform: rotate(45deg);
+  transition: all 1s ease;
+}
+
+.button:hover {
+  background-color: var(--color-background-active);
+  svg {
+    path {
+      fill: var(--color-text-common);
+    }
+  }
+}

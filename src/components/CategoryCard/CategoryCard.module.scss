@@ -1,0 +1,93 @@
+#card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  img {
+    width: 82px;
+  }
+
+  .info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    .infoTitle {
+      font-size: 16px;
+    }
+
+    .description {
+      p {
+        color: var(--color-text-secondary);
+      }
+    }
+    .eventDescription {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      p {
+        position: relative;
+        padding-left: 20px;
+        font-size: 14px;
+        line-height: 20px;
+      }
+      p::before {
+        position: absolute;
+        left: 0;
+        display: flex;
+        top: 50%;
+        transform: translateY(-40%);
+      }
+
+      p:nth-child(1)::before {
+        content: url("../../assets/videoCamera.svg");
+      }
+      p:nth-child(2)::before {
+        content: url("../../assets/calendar.svg");
+      }
+      p:nth-child(3)::before {
+        content: url("../../assets/clock.svg");
+      }
+    }
+  }
+
+  .additional {
+    align-self: flex-end;
+
+    .status {
+      color: var(--color-text-warning);
+    }
+    .date {
+      color: var(--color-text-secondary);
+    }
+  }
+}
+
+.card {
+  border: 1px solid #cdcdcd;
+  svg {
+    rect {
+      fill: #f1f2f3;
+    }
+    path {
+      fill: #616f82;
+    }
+  }
+}
+
+.card__active {
+  border: 1px solid #4198c5;
+  svg {
+    rect {
+      fill: #4198c5;
+    }
+    path {
+      fill: #fff;
+    }
+  }
+}

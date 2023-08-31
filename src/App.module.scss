@@ -1,0 +1,72 @@
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+
+  aside {
+    max-width: 366px;
+    flex-grow: 1;
+
+    .checkbox {
+      cursor: pointer;
+    }
+
+    .panelInfo {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 10px;
+      margin-bottom: 15px;
+
+      button {
+        cursor: pointer;
+        border: none;
+      }
+
+      .panelInteraction {
+        display: flex;
+        gap: 15px;
+      }
+
+      .countGroup {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      #count {
+        display: flex;
+        justify-content: center;
+        padding: 0 4px;
+        font-size: 12px;
+        border-radius: 9px;
+        width: 28px;
+      }
+
+      .count__inactive {
+        background-color: #616f82;
+        color: #fff;
+      }
+
+      .count__active {
+        background-color: var(--color-text-active);
+        color: #fff;
+      }
+    }
+  }
+
+  main {
+    flex-grow: 1;
+    max-width: 744px;
+
+    .tabContent {
+      padding: 15px;
+      overflow-y: auto;
+      max-height: 784px;
+      background-color: var(--color-background-secondary);
+      height: 100%;
+      box-shadow: 0px 1px 4px 0px rgba(30, 30, 30, 0.1);
+    }
+  }
+}

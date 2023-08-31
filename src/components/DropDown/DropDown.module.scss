@@ -1,0 +1,32 @@
+.dropdownList {
+  display: block;
+  position: absolute;
+  width: 0px;
+  top: 25px;
+  right: 15px;
+  border-radius: 5px;
+  padding: 8px 0;
+  overflow: hidden;
+  background-color: var(--color-background-secondary);
+  li {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+  li:hover {
+    background-color: var(--color-background-primary);
+  }
+
+  &.visible {
+    width: 230px;
+    box-shadow: var(--shades);
+    overflow: visible;
+    z-index: 999;
+  }
+
+  &.hidden {
+    width: 0;
+    max-height: 0;
+    z-index: 999;
+    box-shadow: var(--shades);
+  }
+}

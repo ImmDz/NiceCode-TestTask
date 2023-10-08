@@ -1,0 +1,77 @@
+.panelContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 10px;
+  gap: 14px;
+  background-color: var(--background-secondary);
+  border-radius: 4px;
+  box-shadow: 0px 1px 4px 0px var(--shadow-primary);
+}
+
+.searchContainer__closed {
+  border: 1px solid var(--border-search);
+  padding: 10px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  border-radius: 100px;
+  width: 34px;
+  height: 34px;
+  background-color: var(--button-background);
+  cursor: pointer;
+  transition: width 1s ease, background-color 5s ease;
+}
+
+.searchContainer__opened {
+  border: 1px solid var(--border-search);
+  padding: 5px 0;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  border-radius: 100px;
+  width: 250px;
+  height: 34px;
+  transition: width 1s ease, background-color 0.1s ease;
+}
+
+.panelContainer span svg {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+}
+
+.panelContainer span input {
+  margin-left: 35px;
+  outline: none;
+  border: none;
+}
+
+.buttonGroup {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.buttonGroup button {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--button-background);
+  cursor: pointer;
+}
+
+.buttonGroup button svg path {
+  fill: var(--button-inner);
+}
+
+.buttonGroup button:hover {
+  background-color: var(--button-background-active);
+}
+
+.buttonGroup button:hover svg path {
+  fill: white;
+}

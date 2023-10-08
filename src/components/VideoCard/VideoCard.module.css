@@ -1,0 +1,31 @@
+.tabCard {
+    display: flex;
+    border: 1px solid var(--border-navbar);
+    border-radius: 4px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    color: var(--text-primary);
+}
+
+.author {
+    color: var(--text-interactive-element);
+}
+
+.tabCard img {
+    max-width: 82px;
+    border-radius: 4px;
+}
+
+.date {
+    align-self: flex-end;
+    color: var(--text-interactive-element);
+}

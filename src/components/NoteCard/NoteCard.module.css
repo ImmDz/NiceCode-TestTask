@@ -1,0 +1,39 @@
+.tabCard {
+  padding: 10px;
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  font-size: 14px;
+  line-height: 24px;
+  max-width: 744px;
+}
+
+.date {
+  color: var(--text-interactive-element);
+}
+
+.description {
+  flex-grow: 1;
+  text-align: justify;
+  word-break: break-all;
+}
+
+textarea {
+  flex-grow: 1;
+  height: 100px;
+  resize: none;
+  outline: none;
+}
+
+.ellipsis {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.ellipsis svg path {
+  width: 25px;
+}

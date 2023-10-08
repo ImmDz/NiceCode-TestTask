@@ -1,0 +1,59 @@
+aside {
+  flex-grow: 1;
+  max-width: 366px;
+}
+
+.asidePatientsInfo {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 10px;
+}
+
+.counterWrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.asideCounter {
+  display: flex;
+  align-items: center;
+  background-color: var(--background-counter);
+  border-radius: 9px;
+  padding: 2px 4px;
+  color: var(--text-counter);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+}
+
+.active {
+  background-color: var(--background-counter-active);
+}
+
+.asidePatientsInfo button {
+  border: none;
+  background-color: inherit;
+  color: var(--text-interactive-element);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.asideList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+  max-height: 830px;
+}
+
+.groupButton {
+  display: flex;
+  gap: 10px;
+  position: relative;
+}
+
+.govno {
+  position: relative;
+}

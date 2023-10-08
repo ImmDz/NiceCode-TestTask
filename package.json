@@ -1,4 +1,5 @@
 {
+  "homepage": "https://immdz.github.io/NiceCode-TestTask",
   "name": "nicecode",
   "version": "0.1.0",
   "private": true,
@@ -19,6 +20,8 @@
   },
   "scripts": {
     "start": "webpack-dev-server",
+    "predeploy": "gh-pages -d build",
+    "deploy": "react-scripts build",
     "build": "webpack --node-env=production",
     "test": "jest"
   },

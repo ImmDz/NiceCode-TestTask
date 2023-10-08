@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import { patients } from "./mock/patients";
 
 import { Aside } from "./components/Aside/Aside";
 import { Main } from "./components/Main/Main";

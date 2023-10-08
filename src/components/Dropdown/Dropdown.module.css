@@ -1,0 +1,25 @@
+.dropdownContainer {
+  width: 200px;
+  height: min-content;
+  border-radius: 4px 0 4px 4px;
+  position: absolute;
+  right: 25px;
+  top: 15px;
+  background-color: var(--background-secondary);
+  padding: 9px 0;
+  box-shadow: 0px 1px 4px 0px var(--shadow-primary);
+  overflow: hidden;
+  z-index: 10;
+}
+
+.dropdownButton {
+  width: 100%;
+  border: none;
+  padding: 7px;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.dropdownButton:hover {
+  background-color: var(--button-background);
+}

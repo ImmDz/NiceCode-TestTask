@@ -1,0 +1,22 @@
+.navbar {
+    display: flex;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 5px 0;
+}
+
+.tab:first-child {
+    padding-right: 20px;
+}
+
+.tab:not(:first-child) {
+    border-left: 1px solid var(--border-navbar);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.active {
+    color: var(--text-active);
+}

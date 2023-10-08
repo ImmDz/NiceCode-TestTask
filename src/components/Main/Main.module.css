@@ -1,0 +1,85 @@
+.mainContainer {
+  flex-grow: 1;
+  max-width: 744px;
+}
+
+.mainHeader {
+  background-color: var(--background-secondary);
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 10px 16px 10px 10px;
+  border-radius: 4px;
+  box-shadow: 0px 1px 4px 0px var(--shadow-primary);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex-grow: 1;
+}
+
+.ellipsisWrapper {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.ellipsisWrapper svg path {
+  width: 25px;
+}
+
+.photo {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.mainHeader img {
+  object-fit: cover;
+}
+
+.mainInteraction {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--text-interactive-element);
+}
+
+.add {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  background-color: inherit;
+  font-size: 14px;
+  color: var(--text-interactive-element);
+  cursor: pointer;
+}
+
+.add svg {
+  border: 1px solid var(--border-button);
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  padding: 5px;
+}
+
+.tabContent {
+  background-color: var(--background-secondary);
+  max-height: 779px;
+  height: 100%;
+  overflow-y: auto;
+  box-shadow: 0 1px 4px 0 var(--shadow-primary);
+  border-radius: 4px;
+}

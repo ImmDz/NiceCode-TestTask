@@ -1,0 +1,30 @@
+.tabCard {
+    display: flex;
+    border: 1px solid var(--border-navbar);
+    border-radius: 4px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tabCard img {
+    max-width: 82px;
+    height: 47px;
+    border-radius: 4px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    color: var(--text-primary);
+    gap: 14px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.additional {
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+}

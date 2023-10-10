@@ -1,9 +1,8 @@
 .tabCard {
-  padding: 10px;
   display: flex;
   gap: 15px;
   align-items: flex-start;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 24px;
   max-width: 744px;
 }

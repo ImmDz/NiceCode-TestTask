@@ -19,12 +19,12 @@
     flex-direction: column;
     color: var(--text-primary);
     gap: 14px;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 20px;
 }
 
 .additional {
     display: flex;
     gap: 10px;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
